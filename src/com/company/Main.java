@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.controllers.AcceuilController;
 import com.company.views.Acceuil;
 import com.company.views.Informations;
 
@@ -8,7 +9,8 @@ public class Main {
     public static void main(String[] args) {
 
         Acceuil window = new Acceuil();
-        window.frame.setVisible(true);
+        AcceuilController c = new AcceuilController(window);
+        //window.frame.setVisible(true);
 
 
        /* Gestiondesnotes window = new Gestiondesnotes();

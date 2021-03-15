@@ -34,7 +34,7 @@ public class Informations {
     private JTextField entrer_cne;
     private JButton btnRechercher;
     private JButton btnBack;
-    public static DefaultTableModel model;
+    public DefaultTableModel model;
     public JTable tableEtudiant;
     public JScrollPane scrollPane;
 
@@ -220,6 +220,180 @@ public class Informations {
 
     }
 
+    public static JFrame getFrame() {
+        return frame;
+    }
 
+    public static void setFrame(JFrame frame) {
+        Informations.frame = frame;
+    }
+
+    public JTextField getLblCNE() {
+        return lblCNE;
+    }
+
+    public void setLblCNE(JTextField lblCNE) {
+        this.lblCNE = lblCNE;
+    }
+
+    public JTextField getLblnom() {
+        return lblnom;
+    }
+
+    public void setLblnom(JTextField lblnom) {
+        this.lblnom = lblnom;
+    }
+
+    public JTextField getLblprenom() {
+        return lblprenom;
+    }
+
+    public void setLblprenom(JTextField lblprenom) {
+        this.lblprenom = lblprenom;
+    }
+
+    public JTextField getLblDiplome() {
+        return lblDiplome;
+    }
+
+    public void setLblDiplome(JTextField lblDiplome) {
+        this.lblDiplome = lblDiplome;
+    }
+
+    public JTextField getLblEmail() {
+        return lblEmail;
+    }
+
+    public void setLblEmail(JTextField lblEmail) {
+        this.lblEmail = lblEmail;
+    }
+
+    public JTextField getCne() {
+        return cne;
+    }
+
+    public void setCne(JTextField cne) {
+        this.cne = cne;
+    }
+
+    public JTextField getNom() {
+        return nom;
+    }
+
+    public void setNom(JTextField nom) {
+        this.nom = nom;
+    }
+
+    public JTextField getPrenom() {
+        return prenom;
+    }
+
+    public void setPrenom(JTextField prenom) {
+        this.prenom = prenom;
+    }
+
+    public JTextField getDiplome() {
+        return diplome;
+    }
+
+    public void setDiplome(JTextField diplome) {
+        this.diplome = diplome;
+    }
+
+    public JTextField getEmail() {
+        return email;
+    }
+
+    public void setEmail(JTextField email) {
+        this.email = email;
+    }
+
+    public JTextField getInfoetu() {
+        return infoetu;
+    }
+
+    public void setInfoetu(JTextField infoetu) {
+        this.infoetu = infoetu;
+    }
+
+    public JButton getBtnAjouter() {
+        return btnAjouter;
+    }
+
+    public void setBtnAjouter(JButton btnAjouter) {
+        this.btnAjouter = btnAjouter;
+    }
+
+    public JButton getBtnModifier() {
+        return btnModifier;
+    }
+
+    public void setBtnModifier(JButton btnModifier) {
+        this.btnModifier = btnModifier;
+    }
+
+    public JButton getBtnSupprimer() {
+        return btnSupprimer;
+    }
+
+    public void setBtnSupprimer(JButton btnSupprimer) {
+        this.btnSupprimer = btnSupprimer;
+    }
+
+    public JTextField getLblEntrerVotreCne() {
+        return lblEntrerVotreCne;
+    }
+
+    public void setLblEntrerVotreCne(JTextField lblEntrerVotreCne) {
+        this.lblEntrerVotreCne = lblEntrerVotreCne;
+    }
+
+    public JTextField getEntrer_cne() {
+        return entrer_cne;
+    }
+
+    public void setEntrer_cne(JTextField entrer_cne) {
+        this.entrer_cne = entrer_cne;
+    }
+
+    public JButton getBtnRechercher() {
+        return btnRechercher;
+    }
+
+    public void setBtnRechercher(JButton btnRechercher) {
+        this.btnRechercher = btnRechercher;
+    }
+
+    public JButton getBtnBack() {
+        return btnBack;
+    }
+
+    public void setBtnBack(JButton btnBack) {
+        this.btnBack = btnBack;
+    }
+
+    public  DefaultTableModel getModel() {
+        return model;
+    }
+
+    public  void setModel(DefaultTableModel model) {
+        model = model;
+    }
+
+    public JTable getTableEtudiant() {
+        return tableEtudiant;
+    }
+
+    public void setTableEtudiant(JTable tableEtudiant) {
+        this.tableEtudiant = tableEtudiant;
+    }
+
+    public JScrollPane getScrollPane() {
+        return scrollPane;
+    }
+
+    public void setScrollPane(JScrollPane scrollPane) {
+        this.scrollPane = scrollPane;
+    }
 }
 

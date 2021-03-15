@@ -115,11 +115,11 @@ public class Acceuil {
         btnGestionDesMoyennes.setBorder(new EmptyBorder(0, 0, 0, 0));
         frame.getContentPane().add(btnGestionDesMoyennes);
 
-        MyActionListener m=new MyActionListener();
-        btnInformationsEtudiants.addActionListener(m);
-        btnGestionDesNotes.addActionListener(m);
-        btnGestionDesMoyennes.addActionListener(m);
-        btnGestionDesAbsences.addActionListener(m);
+//        MyActionListener m=new MyActionListener();
+//        btnInformationsEtudiants.addActionListener(m);
+//        btnGestionDesNotes.addActionListener(m);
+//        btnGestionDesMoyennes.addActionListener(m);
+//        btnGestionDesAbsences.addActionListener(m);
 
 
         JLabel lblNewLabel = new JLabel("");
@@ -143,25 +143,68 @@ public class Acceuil {
         frame.getContentPane().add(lblNewLabel_2);
 
     }
-    private class MyActionListener implements ActionListener {
-        public void actionPerformed(ActionEvent event) {
-            if(event.getSource()==btnInformationsEtudiants) {
-                Informations window = new Informations();
-                window.frame.setVisible(true);
-             //   frame.setVisible(false);
 
-            }else if(event.getSource()==btnGestionDesNotes) {
-                frame.setVisible(false);
-                Gestiondesnotes.frame.setVisible(true);
-
-            }else if(event.getSource()==btnGestionDesMoyennes) {
-                frame.setVisible(false);
-                Gestiondesmoyenne.frame.setVisible(true);
-            }else if(event.getSource()==btnGestionDesAbsences) {
-                frame.setVisible(false);
-                Gestiondesabsence.frame.setVisible(true);
-            }
-        }
+    public static JFrame getFrame() {
+        return frame;
     }
 
+    public static void setFrame(JFrame frame) {
+        Acceuil.frame = frame;
+    }
+
+    public JTextField getTxtUniversiteSidiMohamed() {
+        return txtUniversiteSidiMohamed;
+    }
+
+    public void setTxtUniversiteSidiMohamed(JTextField txtUniversiteSidiMohamed) {
+        this.txtUniversiteSidiMohamed = txtUniversiteSidiMohamed;
+    }
+
+    public JTextField getTxtFaculteDesScience() {
+        return txtFaculteDesScience;
+    }
+
+    public void setTxtFaculteDesScience(JTextField txtFaculteDesScience) {
+        this.txtFaculteDesScience = txtFaculteDesScience;
+    }
+
+    public JTextField getTxtGestionDesEtudiant() {
+        return txtGestionDesEtudiant;
+    }
+
+    public void setTxtGestionDesEtudiant(JTextField txtGestionDesEtudiant) {
+        this.txtGestionDesEtudiant = txtGestionDesEtudiant;
+    }
+
+    public JButton getBtnGestionDesAbsences() {
+        return btnGestionDesAbsences;
+    }
+
+    public void setBtnGestionDesAbsences(JButton btnGestionDesAbsences) {
+        this.btnGestionDesAbsences = btnGestionDesAbsences;
+    }
+
+    public JButton getBtnGestionDesNotes() {
+        return btnGestionDesNotes;
+    }
+
+    public void setBtnGestionDesNotes(JButton btnGestionDesNotes) {
+        this.btnGestionDesNotes = btnGestionDesNotes;
+    }
+
+    public JButton getBtnInformationsEtudiants() {
+        return btnInformationsEtudiants;
+    }
+
+    public void setBtnInformationsEtudiants(JButton btnInformationsEtudiants) {
+        this.btnInformationsEtudiants = btnInformationsEtudiants;
+    }
+
+    public JButton getBtnGestionDesMoyennes() {
+        return btnGestionDesMoyennes;
+    }
+
+    public void setBtnGestionDesMoyennes(JButton btnGestionDesMoyennes) {
+        this.btnGestionDesMoyennes = btnGestionDesMoyennes;
+    }
 }

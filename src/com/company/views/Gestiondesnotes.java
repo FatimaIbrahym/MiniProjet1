@@ -23,8 +23,8 @@ public class Gestiondesnotes {
     private JTextField textModule;
     private JScrollPane scrollPane;
     public JTable tablenote;
-    public static DefaultTableModel modelnote;
-    public static JComboBox<String> combomodule;
+    public  DefaultTableModel modelnote;
+    public  JComboBox<String> combomodule;
     public static JButton btnSauvgarder;
 
     public Gestiondesnotes() {
@@ -112,4 +112,83 @@ public class Gestiondesnotes {
 
     }
 
+    public static JFrame getFrame() {
+        return frame;
+    }
+
+    public static void setFrame(JFrame frame) {
+        Gestiondesnotes.frame = frame;
+    }
+
+    public JButton getBtnrechercher() {
+        return btnrechercher;
+    }
+
+    public void setBtnrechercher(JButton btnrechercher) {
+        this.btnrechercher = btnrechercher;
+    }
+
+    public JButton getBtnAnnuler() {
+        return btnAnnuler;
+    }
+
+    public void setBtnAnnuler(JButton btnAnnuler) {
+        this.btnAnnuler = btnAnnuler;
+    }
+
+    public JTextField getTxtGestiondesnotes() {
+        return txtGestiondesnotes;
+    }
+
+    public void setTxtGestiondesnotes(JTextField txtGestiondesnotes) {
+        this.txtGestiondesnotes = txtGestiondesnotes;
+    }
+
+    public JTextField getTextModule() {
+        return textModule;
+    }
+
+    public void setTextModule(JTextField textModule) {
+        this.textModule = textModule;
+    }
+
+    public JScrollPane getScrollPane() {
+        return scrollPane;
+    }
+
+    public void setScrollPane(JScrollPane scrollPane) {
+        this.scrollPane = scrollPane;
+    }
+
+    public JTable getTablenote() {
+        return tablenote;
+    }
+
+    public void setTablenote(JTable tablenote) {
+        this.tablenote = tablenote;
+    }
+
+    public  DefaultTableModel getModelnote() {
+        return modelnote;
+    }
+
+    public  void setModelnote(DefaultTableModel modelnote) {
+        modelnote = modelnote;
+    }
+
+    public  JComboBox<String> getCombomodule() {
+        return combomodule;
+    }
+
+    public  void setCombomodule(JComboBox<String> combomodule) {
+        combomodule = combomodule;
+    }
+
+    public static JButton getBtnSauvgarder() {
+        return btnSauvgarder;
+    }
+
+    public static void setBtnSauvgarder(JButton btnSauvgarder) {
+        Gestiondesnotes.btnSauvgarder = btnSauvgarder;
+    }
 }

@@ -3,19 +3,29 @@ import java.sql.*;
 
 
 public class MySQL {
-    private Connection connection = null;
-    private Statement statement =  null;
-    private ResultSet resultSet = null;
+    private static Connection connection = null;
 
-    private String url = "jdbc:mysql://localhost:3306/";
-    private String user = "root", pass = "";
-    private String db = "miniProjet1";
+    private static String url = "jdbc:mysql://localhost:3306/";
+    private  static String user = "root";
+    private static String pass = "";
+    private static String db = "fat";
 
-    public MySQL() throws ClassNotFoundException, SQLException {
 
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        connection = DriverManager.getConnection(url + db, user, pass);
-        statement = connection.createStatement();
+    public static Connection getConnection() {
+        if (connection==null){
+            try {
+                Class.forName("com.mysql.cj.jdbc.Driver");
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+            try {
+                connection = DriverManager.getConnection(url + db, user, pass);
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
+        return connection;
+
 
     }
 

@@ -1,23 +1,33 @@
 package com.company.models;
 
-public class Edudiant {
-
+public class Etudiant {
+        private Long id;
         private String cne;
         private String nom;
         private String prenom;
         private String diplome;
         private String email;
-
-        public Edudiant() {
+        public Etudiant() {
         }
 
-        public Edudiant(String cne, String nom, String prenom, String diplome, String email) {
-            this.cne = cne;
-            this.nom = nom;
-            this.prenom = prenom;
-            this.diplome = diplome;
-            this.email = email;
-        }
+    public Etudiant(Long id, String cne, String nom, String prenom, String diplome, String email) {
+        this.id = id;
+        this.cne = cne;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.diplome = diplome;
+        this.email = email;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+
+
+    public Long getId() {
+        return id;
+    }
 
     public String getCne() {
         return cne;
